@@ -1,0 +1,1303 @@
+/* GLOBAL INDEX STYLESHEET */
+/* GLOBAL CSS RESETS */
+/* line 16, ../sass/base/base.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 28, ../sass/base/base.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* LAYOUT CSS STYLESHEETS  */
+/* IMPORTS*/
+/* CSS VARIBLES STYLESHEET  */
+/* COLOR VARIABLES  */
+/* FONT IMPORTS */
+@font-face {
+  font-family: 'museo_sans500';
+  src: url("../fonts/museosans-500.woff2") format("woff2"), url("../fonts/museosans-500.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'museosansw01-rounded300Rg';
+  src: url("../fonts/museo_sans_rounded_300.woff2") format("woff2"), url("../fonts/museo_sans_rounded_300.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'open_sansregular';
+  src: url("../fonts/opensans-regular-webfont.woff2") format("woff2"), url("../fonts/opensans-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* FONT VARIABLES  */
+/* EXTEND */
+/* line 61, ../sass/utilities/variables/variables.scss */
+.layout, #header, #footer .region-footer, #block-views-current-event-block div.content, #block-views-about-block-block, #block-views-open-charity-mission-block div.content, #block-views-services-block-1 div.content, #block-views-front-page-blog-display-block div.content {
+  display: block;
+  width: auto;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* line 67, ../sass/utilities/variables/variables.scss */
+.clear, #block-views-services-block-1 .view-services .jcarousel-container, #block-views-front-page-blog-display-block .view-front-page-blog-display .jcarousel-container {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 73, ../sass/utilities/variables/variables.scss */
+.head2, #block-views-about-block-block > h2, #block-views-open-charity-mission-block > h2, #block-views-services-block-1 > h2, #block-views-front-page-blog-display-block > h2 {
+  font-family: "museo_sans500", serif;
+  text-align: center;
+  font-size: 26px;
+  text-transform: uppercase;
+  margin: 0 auto 40px;
+  display: block;
+  color: #575656;
+}
+@media only screen and (max-width: 1024px) {
+  /* line 73, ../sass/utilities/variables/variables.scss */
+  .head2, #block-views-about-block-block > h2, #block-views-open-charity-mission-block > h2, #block-views-services-block-1 > h2, #block-views-front-page-blog-display-block > h2 {
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 960px) {
+  /* line 73, ../sass/utilities/variables/variables.scss */
+  .head2, #block-views-about-block-block > h2, #block-views-open-charity-mission-block > h2, #block-views-services-block-1 > h2, #block-views-front-page-blog-display-block > h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  /* line 73, ../sass/utilities/variables/variables.scss */
+  .head2, #block-views-about-block-block > h2, #block-views-open-charity-mission-block > h2, #block-views-services-block-1 > h2, #block-views-front-page-blog-display-block > h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  /* line 73, ../sass/utilities/variables/variables.scss */
+  .head2, #block-views-about-block-block > h2, #block-views-open-charity-mission-block > h2, #block-views-services-block-1 > h2, #block-views-front-page-blog-display-block > h2 {
+    font-size: 18px;
+  }
+}
+
+/* MIXINS */
+/* HEADER STYLES */
+/* line 12, ../sass/layout/layout.scss */
+#header {
+  position: relative;
+  padding: 20px 80px;
+}
+@media only screen and (max-width: 1024px) {
+  /* line 12, ../sass/layout/layout.scss */
+  #header {
+    padding: 20px 50px;
+  }
+}
+/* line 22, ../sass/layout/layout.scss */
+#header div.section h1#logo {
+  float: left;
+  display: block;
+  position: relative;
+  top: 8px;
+}
+@media only screen and (max-width: 750px) {
+  /* line 22, ../sass/layout/layout.scss */
+  #header div.section h1#logo {
+    float: none;
+    top: 0;
+  }
+}
+/* line 33, ../sass/layout/layout.scss */
+#header div.section h1#logo a img {
+  max-width: 155px;
+  width: auto;
+  display: block;
+  height: auto;
+}
+@media only screen and (max-width: 750px) {
+  /* line 33, ../sass/layout/layout.scss */
+  #header div.section h1#logo a img {
+    margin: 0 auto;
+  }
+}
+/* line 46, ../sass/layout/layout.scss */
+#header div.section div.region {
+  float: right;
+  display: block;
+}
+@media only screen and (max-width: 750px) {
+  /* line 46, ../sass/layout/layout.scss */
+  #header div.section div.region {
+    float: none;
+  }
+}
+/* line 52, ../sass/layout/layout.scss */
+#header div.section div.region div.block {
+  float: right;
+  display: block;
+  margin-left: 15px;
+}
+/* line 57, ../sass/layout/layout.scss */
+#header div.section div.region #block-system-main-menu {
+  margin: 0px auto;
+  position: relative;
+  display: table;
+  height: 50px;
+}
+@media only screen and (max-width: 750px) {
+  /* line 57, ../sass/layout/layout.scss */
+  #header div.section div.region #block-system-main-menu {
+    float: none;
+  }
+}
+/* line 66, ../sass/layout/layout.scss */
+#header div.section div.region #block-system-main-menu div.content {
+  display: table-cell;
+  list-style: none;
+  vertical-align: middle;
+}
+/* line 71, ../sass/layout/layout.scss */
+#header div.section div.region #block-system-main-menu h2 {
+  display: none;
+}
+/* line 76, ../sass/layout/layout.scss */
+#header div.section div.region #block-system-main-menu ul.menu li {
+  list-style: none;
+  padding: 0;
+  margin: 0 15px;
+  float: left;
+}
+@media only screen and (max-width: 550px) {
+  /* line 76, ../sass/layout/layout.scss */
+  #header div.section div.region #block-system-main-menu ul.menu li {
+    margin: 0 10px;
+  }
+}
+/* line 84, ../sass/layout/layout.scss */
+#header div.section div.region #block-system-main-menu ul.menu li a {
+  color: #575656;
+  font-family: "museo_sans500", serif;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+@media only screen and (max-width: 750px) {
+  /* line 84, ../sass/layout/layout.scss */
+  #header div.section div.region #block-system-main-menu ul.menu li a {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  /* line 99, ../sass/layout/layout.scss */
+  #header div.section div.region #block-block-1 {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 500px) {
+  /* line 99, ../sass/layout/layout.scss */
+  #header div.section div.region #block-block-1 {
+    top: 5px;
+    right: 5px;
+  }
+}
+/* line 109, ../sass/layout/layout.scss */
+#header div.section div.region #block-block-1 div.content {
+  display: table;
+  height: 50px;
+}
+@media only screen and (max-width: 750px) {
+  /* line 109, ../sass/layout/layout.scss */
+  #header div.section div.region #block-block-1 div.content {
+    height: 30px;
+  }
+}
+/* line 115, ../sass/layout/layout.scss */
+#header div.section div.region #block-block-1 div.content a.join {
+  color: #61c0bd;
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+  padding: 15px 25px;
+  font-size: 14px;
+  font-family: "museo_sans500", serif;
+  text-transform: uppercase;
+  border: 1px solid #61c0bd;
+}
+@media only screen and (max-width: 960px) {
+  /* line 115, ../sass/layout/layout.scss */
+  #header div.section div.region #block-block-1 div.content a.join {
+    padding: 10px 15px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  /* line 115, ../sass/layout/layout.scss */
+  #header div.section div.region #block-block-1 div.content a.join {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  /* line 115, ../sass/layout/layout.scss */
+  #header div.section div.region #block-block-1 div.content a.join {
+    font-size: 10px;
+  }
+}
+
+/* HIGHLIGHTED LAYOUT STYLES */
+/* MAIN CONTENT STYLES */
+/* line 154, ../sass/layout/layout.scss */
+.region-content {
+  position: relative;
+}
+
+/* FOOTER LAYOUT STYLES */
+/* line 173, ../sass/layout/layout.scss */
+#footer {
+  display: block;
+  background: #454850;
+}
+/* line 177, ../sass/layout/layout.scss */
+#footer .region-footer {
+  padding: 30px 80px;
+}
+@media only screen and (max-width: 1024px) {
+  /* line 177, ../sass/layout/layout.scss */
+  #footer .region-footer {
+    padding: 20px 50px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* line 177, ../sass/layout/layout.scss */
+  #footer .region-footer {
+    padding: 15px 30px;
+  }
+}
+/* line 185, ../sass/layout/layout.scss */
+#footer .region-footer .block {
+  border-bottom: 1px solid #565a63;
+}
+/* line 187, ../sass/layout/layout.scss */
+#footer .region-footer .block:last-child {
+  border: none;
+}
+/* line 192, ../sass/layout/layout.scss */
+#footer .region-footer #block-block-2 p.copyright {
+  font-family: "open_sansregular", serif;
+  color: #979eb1;
+  text-align: center;
+  font-size: 14px;
+}
+/* line 198, ../sass/layout/layout.scss */
+#footer .region-footer #block-block-2 p.copyright a {
+  color: #61c0bd;
+}
+/* line 205, ../sass/layout/layout.scss */
+#footer .region-footer #block-block-3 {
+  display: block;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 768px) {
+  /* line 205, ../sass/layout/layout.scss */
+  #footer .region-footer #block-block-3 {
+    margin-bottom: 15px;
+    padding-bottom: 20px;
+  }
+}
+/* line 213, ../sass/layout/layout.scss */
+#footer .region-footer #block-block-3 ul.social_list {
+  text-align: center;
+  display: block;
+}
+/* line 217, ../sass/layout/layout.scss */
+#footer .region-footer #block-block-3 ul.social_list li {
+  display: inline-block;
+}
+/* line 222, ../sass/layout/layout.scss */
+#footer .region-footer #block-block-3 ul.social_list li p a {
+  background: url(../images/icons.png) no-repeat;
+  text-indent: -99999px;
+  display: block;
+  height: 20px;
+  width: 26px;
+  margin: 0 5px;
+}
+/* line 230, ../sass/layout/layout.scss */
+#footer .region-footer #block-block-3 ul.social_list li p a.facebook {
+  background-position: top center;
+}
+/* line 232, ../sass/layout/layout.scss */
+#footer .region-footer #block-block-3 ul.social_list li p a.twitter {
+  background-position: center 52%;
+  height: 18px;
+}
+/* line 235, ../sass/layout/layout.scss */
+#footer .region-footer #block-block-3 ul.social_list li p a.google {
+  background-position: bottom center;
+  height: 17px;
+}
+
+/* MODULE CSS STYLESHEETS  */
+/* IMPORTS */
+/* CSS VARIBLES STYLESHEET  */
+/* COLOR VARIABLES  */
+/* FONT IMPORTS */
+@font-face {
+  font-family: 'museo_sans500';
+  src: url("../fonts/museosans-500.woff2") format("woff2"), url("../fonts/museosans-500.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'museosansw01-rounded300Rg';
+  src: url("../fonts/museo_sans_rounded_300.woff2") format("woff2"), url("../fonts/museo_sans_rounded_300.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'open_sansregular';
+  src: url("../fonts/opensans-regular-webfont.woff2") format("woff2"), url("../fonts/opensans-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* FONT VARIABLES  */
+/* EXTEND */
+/* line 61, ../sass/utilities/variables/variables.scss */
+.layout, #header, #footer .region-footer, #block-views-current-event-block div.content, #block-views-about-block-block, #block-views-open-charity-mission-block div.content, #block-views-services-block-1 div.content, #block-views-front-page-blog-display-block div.content {
+  display: block;
+  width: auto;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* line 67, ../sass/utilities/variables/variables.scss */
+.clear, #block-views-services-block-1 .view-services .jcarousel-container, #block-views-front-page-blog-display-block .view-front-page-blog-display .jcarousel-container {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 73, ../sass/utilities/variables/variables.scss */
+.head2, #block-views-about-block-block > h2, #block-views-open-charity-mission-block > h2, #block-views-services-block-1 > h2, #block-views-front-page-blog-display-block > h2 {
+  font-family: "museo_sans500", serif;
+  text-align: center;
+  font-size: 26px;
+  text-transform: uppercase;
+  margin: 0 auto 40px;
+  display: block;
+  color: #575656;
+}
+@media only screen and (max-width: 1024px) {
+  /* line 73, ../sass/utilities/variables/variables.scss */
+  .head2, #block-views-about-block-block > h2, #block-views-open-charity-mission-block > h2, #block-views-services-block-1 > h2, #block-views-front-page-blog-display-block > h2 {
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 960px) {
+  /* line 73, ../sass/utilities/variables/variables.scss */
+  .head2, #block-views-about-block-block > h2, #block-views-open-charity-mission-block > h2, #block-views-services-block-1 > h2, #block-views-front-page-blog-display-block > h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  /* line 73, ../sass/utilities/variables/variables.scss */
+  .head2, #block-views-about-block-block > h2, #block-views-open-charity-mission-block > h2, #block-views-services-block-1 > h2, #block-views-front-page-blog-display-block > h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  /* line 73, ../sass/utilities/variables/variables.scss */
+  .head2, #block-views-about-block-block > h2, #block-views-open-charity-mission-block > h2, #block-views-services-block-1 > h2, #block-views-front-page-blog-display-block > h2 {
+    font-size: 18px;
+  }
+}
+
+/* MIXINS */
+/* FRONT BANNER STYLES */
+/* line 16, ../sass/modules/modules.scss */
+#block-views-front-page-banner-block div.view-front-page-banner .banner-wrap {
+  position: relative;
+}
+/* line 21, ../sass/modules/modules.scss */
+#block-views-front-page-banner-block div.view-front-page-banner .banner-wrap .parallax-window .views-field-field-banner-image {
+  display: none;
+}
+/* line 24, ../sass/modules/modules.scss */
+#block-views-front-page-banner-block div.view-front-page-banner .banner-wrap .parallax-window .views-field-nothing {
+  display: block;
+  padding: 80px 0;
+  width: 60%;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 1024px) {
+  /* line 24, ../sass/modules/modules.scss */
+  #block-views-front-page-banner-block div.view-front-page-banner .banner-wrap .parallax-window .views-field-nothing {
+    padding: 50px 0;
+  }
+}
+@media only screen and (max-width: 960px) {
+  /* line 24, ../sass/modules/modules.scss */
+  #block-views-front-page-banner-block div.view-front-page-banner .banner-wrap .parallax-window .views-field-nothing {
+    width: 70%;
+  }
+}
+/* line 36, ../sass/modules/modules.scss */
+#block-views-front-page-banner-block div.view-front-page-banner .banner-wrap .parallax-window .views-field-nothing span.field-content h2.head {
+  font-size: 54px;
+  text-align: center;
+  color: white;
+  display: block;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  font-family: "museosansw01-rounded300Rg", serif;
+}
+@media only screen and (max-width: 1250px) {
+  /* line 36, ../sass/modules/modules.scss */
+  #block-views-front-page-banner-block div.view-front-page-banner .banner-wrap .parallax-window .views-field-nothing span.field-content h2.head {
+    font-size: 45px;
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 960px) {
+  /* line 36, ../sass/modules/modules.scss */
+  #block-views-front-page-banner-block div.view-front-page-banner .banner-wrap .parallax-window .views-field-nothing span.field-content h2.head {
+    font-size: 35px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  /* line 36, ../sass/modules/modules.scss */
+  #block-views-front-page-banner-block div.view-front-page-banner .banner-wrap .parallax-window .views-field-nothing span.field-content h2.head {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  /* line 36, ../sass/modules/modules.scss */
+  #block-views-front-page-banner-block div.view-front-page-banner .banner-wrap .parallax-window .views-field-nothing span.field-content h2.head {
+    font-size: 20px;
+  }
+}
+/* line 60, ../sass/modules/modules.scss */
+#block-views-front-page-banner-block div.view-front-page-banner .banner-wrap .parallax-window .views-field-nothing span.field-content div.subhead ul li {
+  display: block;
+  margin: 0 0 35px;
+}
+@media only screen and (max-width: 960px) {
+  /* line 60, ../sass/modules/modules.scss */
+  #block-views-front-page-banner-block div.view-front-page-banner .banner-wrap .parallax-window .views-field-nothing span.field-content div.subhead ul li {
+    margin: 0 0 25px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  /* line 60, ../sass/modules/modules.scss */
+  #block-views-front-page-banner-block div.view-front-page-banner .banner-wrap .parallax-window .views-field-nothing span.field-content div.subhead ul li {
+    margin: 0 0 15px;
+  }
+}
+/* line 68, ../sass/modules/modules.scss */
+#block-views-front-page-banner-block div.view-front-page-banner .banner-wrap .parallax-window .views-field-nothing span.field-content div.subhead ul li p {
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  line-height: 1.2;
+  font-family: "open_sansregular", serif;
+}
+@media only screen and (max-width: 880px) {
+  /* line 68, ../sass/modules/modules.scss */
+  #block-views-front-page-banner-block div.view-front-page-banner .banner-wrap .parallax-window .views-field-nothing span.field-content div.subhead ul li p {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  /* line 68, ../sass/modules/modules.scss */
+  #block-views-front-page-banner-block div.view-front-page-banner .banner-wrap .parallax-window .views-field-nothing span.field-content div.subhead ul li p {
+    font-size: 12px;
+  }
+}
+
+/* CURRENT EVENT STYLES */
+/* line 98, ../sass/modules/modules.scss */
+#block-views-current-event-block {
+  background-color: #f2f2f2;
+  display: block;
+  width: 100%;
+}
+/* line 108, ../sass/modules/modules.scss */
+#block-views-current-event-block div.view-current-event .view-content {
+  display: block;
+  overflow: auto;
+  padding: 35px 70px;
+}
+@media only screen and (max-width: 1024px) {
+  /* line 108, ../sass/modules/modules.scss */
+  #block-views-current-event-block div.view-current-event .view-content {
+    padding: 30px 50px;
+  }
+}
+@media only screen and (max-width: 880px) {
+  /* line 108, ../sass/modules/modules.scss */
+  #block-views-current-event-block div.view-current-event .view-content {
+    padding: 20px 30px;
+  }
+}
+/* line 117, ../sass/modules/modules.scss */
+#block-views-current-event-block div.view-current-event .view-content .views-field-view-node {
+  display: block;
+  float: right;
+}
+@media only screen and (max-width: 750px) {
+  /* line 117, ../sass/modules/modules.scss */
+  #block-views-current-event-block div.view-current-event .view-content .views-field-view-node {
+    float: none;
+    margin-bottom: 15px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  /* line 124, ../sass/modules/modules.scss */
+  #block-views-current-event-block div.view-current-event .view-content .views-field-view-node span.field-content {
+    display: block;
+    text-align: center;
+  }
+}
+/* line 129, ../sass/modules/modules.scss */
+#block-views-current-event-block div.view-current-event .view-content .views-field-view-node span.field-content a {
+  font-family: "museo_sans500", serif;
+  text-transform: uppercase;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  background: #61c0bd;
+  padding: 15px 20px;
+  position: relative;
+  top: 18px;
+}
+@media only screen and (max-width: 750px) {
+  /* line 129, ../sass/modules/modules.scss */
+  #block-views-current-event-block div.view-current-event .view-content .views-field-view-node span.field-content a {
+    padding: 10px 15px;
+    display: inline-block;
+    top: 0;
+  }
+}
+/* line 149, ../sass/modules/modules.scss */
+#block-views-current-event-block div.view-current-event .view-content .views-field-field-event-date {
+  display: block;
+  float: left;
+  font-size: 17px;
+  font-family: "museo_sans500", serif;
+  margin-bottom: 15px;
+}
+@media only screen and (max-width: 750px) {
+  /* line 149, ../sass/modules/modules.scss */
+  #block-views-current-event-block div.view-current-event .view-content .views-field-field-event-date {
+    font-size: 15px;
+    float: none;
+    text-align: center;
+  }
+}
+/* line 160, ../sass/modules/modules.scss */
+#block-views-current-event-block div.view-current-event .view-content .views-field-field-event-date span.views-label {
+  color: #61c0bd;
+}
+/* line 163, ../sass/modules/modules.scss */
+#block-views-current-event-block div.view-current-event .view-content .views-field-field-event-date .field-content {
+  display: inline;
+  color: #575656;
+}
+/* line 167, ../sass/modules/modules.scss */
+#block-views-current-event-block div.view-current-event .view-content .views-field-field-event-date .field-content .date-display-single {
+  display: inline;
+}
+/* line 170, ../sass/modules/modules.scss */
+#block-views-current-event-block div.view-current-event .view-content .views-field-field-event-date .field-content .date-display-single sub, #block-views-current-event-block div.view-current-event .view-content .views-field-field-event-date .field-content .date-display-single sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+/* line 177, ../sass/modules/modules.scss */
+#block-views-current-event-block div.view-current-event .view-content .views-field-field-event-date .field-content .date-display-single sup {
+  top: -0.5em;
+}
+/* line 181, ../sass/modules/modules.scss */
+#block-views-current-event-block div.view-current-event .view-content .views-field-field-event-date .field-content .date-display-single .date-display-range {
+  display: inline;
+}
+/* line 192, ../sass/modules/modules.scss */
+#block-views-current-event-block div.view-current-event .view-content .views-field-field-event-address {
+  display: block;
+  float: left;
+  clear: left;
+}
+@media only screen and (max-width: 750px) {
+  /* line 192, ../sass/modules/modules.scss */
+  #block-views-current-event-block div.view-current-event .view-content .views-field-field-event-address {
+    float: none;
+    clear: both;
+    text-align: center;
+  }
+}
+/* line 203, ../sass/modules/modules.scss */
+#block-views-current-event-block div.view-current-event .view-content .views-field-field-event-address .field-content address {
+  font-size: 14px;
+  color: #5b6172;
+  font-family: "museo_sans500", serif;
+}
+
+/* WHAT WE DO BLOCK (GET INVOLVED) STYLES */
+/* line 220, ../sass/modules/modules.scss */
+#block-views-about-block-block {
+  padding: 40px 80px;
+  overflow: auto;
+}
+@media only screen and (max-width: 1024px) {
+  /* line 220, ../sass/modules/modules.scss */
+  #block-views-about-block-block {
+    padding: 30px 50px;
+  }
+}
+@media only screen and (max-width: 880px) {
+  /* line 220, ../sass/modules/modules.scss */
+  #block-views-about-block-block {
+    padding: 20px 30px;
+  }
+}
+/* line 236, ../sass/modules/modules.scss */
+#block-views-about-block-block .view-about-block .views-row {
+  float: left;
+  width: 33.3333%;
+  display: block;
+}
+@media only screen and (max-width: 750px) {
+  /* line 236, ../sass/modules/modules.scss */
+  #block-views-about-block-block .view-about-block .views-row {
+    width: 100%;
+    float: none;
+    margin: 0 auto 40px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  /* line 236, ../sass/modules/modules.scss */
+  #block-views-about-block-block .view-about-block .views-row {
+    margin: 0 auto 30px;
+  }
+}
+/* line 247, ../sass/modules/modules.scss */
+#block-views-about-block-block .view-about-block .views-row span.about_wrap {
+  display: block;
+  padding: 0 50px;
+}
+@media only screen and (max-width: 960px) {
+  /* line 247, ../sass/modules/modules.scss */
+  #block-views-about-block-block .view-about-block .views-row span.about_wrap {
+    padding: 0 30px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* line 247, ../sass/modules/modules.scss */
+  #block-views-about-block-block .view-about-block .views-row span.about_wrap {
+    padding: 0 15px;
+  }
+}
+/* line 257, ../sass/modules/modules.scss */
+#block-views-about-block-block .view-about-block .views-row span.about_wrap .views-field-field-icon img {
+  height: auto;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+}
+/* line 267, ../sass/modules/modules.scss */
+#block-views-about-block-block .view-about-block .views-row span.about_wrap .views-field-title a {
+  font-family: "museo_sans500", serif;
+  text-transform: uppercase;
+  color: #575656;
+  font-size: 17px;
+  text-align: center;
+  display: block;
+  margin: 30px 0;
+}
+@media only screen and (max-width: 768px) {
+  /* line 267, ../sass/modules/modules.scss */
+  #block-views-about-block-block .view-about-block .views-row span.about_wrap .views-field-title a {
+    margin: 15px 0;
+  }
+}
+/* line 281, ../sass/modules/modules.scss */
+#block-views-about-block-block .view-about-block .views-row span.about_wrap .views-field-body {
+  font-family: "museo_sans500", serif;
+  color: #5b6172;
+  font-size: 14px;
+  text-align: center;
+  line-height: 1.5;
+}
+/* line 291, ../sass/modules/modules.scss */
+#block-views-about-block-block .view-about-block .views-row span.about_wrap .views-field-field-group-type .field-content {
+  text-align: center;
+}
+/* line 294, ../sass/modules/modules.scss */
+#block-views-about-block-block .view-about-block .views-row span.about_wrap .views-field-field-group-type .field-content a {
+  border: 1px solid #61c0bd;
+  color: #61c0bd;
+  padding: 15px 50px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: "museo_sans500", serif;
+  display: inline-block;
+  margin: 30px auto 0;
+}
+@media only screen and (max-width: 1024px) {
+  /* line 294, ../sass/modules/modules.scss */
+  #block-views-about-block-block .view-about-block .views-row span.about_wrap .views-field-field-group-type .field-content a {
+    padding: 15px 30px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* line 294, ../sass/modules/modules.scss */
+  #block-views-about-block-block .view-about-block .views-row span.about_wrap .views-field-field-group-type .field-content a {
+    padding: 10px 20px;
+    margin-top: 20px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  /* line 318, ../sass/modules/modules.scss */
+  #block-views-about-block-block .view-about-block .views-row-last:last-child {
+    margin: 0;
+  }
+}
+/* line 323, ../sass/modules/modules.scss */
+#block-views-about-block-block .view-about-block .views-row-first span.about_wrap {
+  padding-left: 0;
+}
+/* line 325, ../sass/modules/modules.scss */
+#block-views-about-block-block .view-about-block .views-row-last span.about_wrap {
+  padding-right: 0;
+}
+
+/* OPEN CHARITY MISSION STYLES */
+/* line 335, ../sass/modules/modules.scss */
+#block-views-open-charity-mission-block {
+  background: #f1f2f5;
+  overflow: auto;
+  margin: 0 auto;
+  display: block;
+  padding: 40px 80px 50px;
+}
+@media only screen and (max-width: 1024px) {
+  /* line 335, ../sass/modules/modules.scss */
+  #block-views-open-charity-mission-block {
+    padding: 30px 50px;
+  }
+}
+@media only screen and (max-width: 880px) {
+  /* line 335, ../sass/modules/modules.scss */
+  #block-views-open-charity-mission-block {
+    padding: 20px 30px;
+  }
+}
+/* line 352, ../sass/modules/modules.scss */
+#block-views-open-charity-mission-block .view-open-charity-mission {
+  border-bottom: 1px solid #eeeff2;
+  -webkit-box-shadow: 0 1px 0 #dcdde0;
+  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow: 0 1px 0 #dcdde0;
+  /* Firefox 3.5 - 3.6 */
+  box-shadow: 0 1px 0 #dcdde0;
+  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+  overflow: auto;
+  display: block;
+  padding-bottom: 50px;
+}
+@media only screen and (max-width: 880px) {
+  /* line 352, ../sass/modules/modules.scss */
+  #block-views-open-charity-mission-block .view-open-charity-mission {
+    padding-bottom: 30px;
+  }
+}
+/* line 365, ../sass/modules/modules.scss */
+#block-views-open-charity-mission-block .view-open-charity-mission .view-content .views-field-field-mission-slogan h5 {
+  text-align: center;
+  font-family: "open_sansregular", serif;
+  font-size: 14px;
+  color: #5b6172;
+}
+/* line 371, ../sass/modules/modules.scss */
+#block-views-open-charity-mission-block .view-open-charity-mission .view-content .views-field-field-mission-slogan h5 strong {
+  font-family: "museo_sans500", serif;
+  font-size: 17px;
+  display: block;
+  margin: 30px auto 0;
+}
+@media only screen and (max-width: 880px) {
+  /* line 371, ../sass/modules/modules.scss */
+  #block-views-open-charity-mission-block .view-open-charity-mission .view-content .views-field-field-mission-slogan h5 strong {
+    font-size: 15px;
+    margin: 15px auto 0;
+  }
+}
+/* line 387, ../sass/modules/modules.scss */
+#block-views-open-charity-mission-block .view-open-charity-mission .view-content .views-field-field-types ul {
+  display: block;
+  margin: 96px 0 0;
+  padding: 0;
+}
+@media only screen and (max-width: 768px) {
+  /* line 387, ../sass/modules/modules.scss */
+  #block-views-open-charity-mission-block .view-open-charity-mission .view-content .views-field-field-types ul {
+    margin-top: 80px;
+  }
+}
+/* line 394, ../sass/modules/modules.scss */
+#block-views-open-charity-mission-block .view-open-charity-mission .view-content .views-field-field-types ul li {
+  display: block;
+  float: left;
+  width: 31.66%;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0 2.5%;
+}
+@media only screen and (max-width: 750px) {
+  /* line 394, ../sass/modules/modules.scss */
+  #block-views-open-charity-mission-block .view-open-charity-mission .view-content .views-field-field-types ul li {
+    width: 100%;
+    float: none;
+    margin: 0 auto 70px;
+  }
+}
+/* line 406, ../sass/modules/modules.scss */
+#block-views-open-charity-mission-block .view-open-charity-mission .view-content .views-field-field-types ul li .entity-field-collection-item {
+  background: white;
+  padding: 0 20px 40px;
+  display: block;
+  position: relative;
+  border-radius: 6px 6px 6px 6px;
+  -webkit-border-radius: 6px 6px 6px 6px;
+  -khtml-border-radius: 6px 6px 6px 6px;
+  -moz-border-radius: 6px 6px 6px 6px;
+}
+@media only screen and (max-width: 960px) {
+  /* line 406, ../sass/modules/modules.scss */
+  #block-views-open-charity-mission-block .view-open-charity-mission .view-content .views-field-field-types ul li .entity-field-collection-item {
+    padding: 0 10px 20px;
+  }
+}
+/* line 416, ../sass/modules/modules.scss */
+#block-views-open-charity-mission-block .view-open-charity-mission .view-content .views-field-field-types ul li .entity-field-collection-item .field-name-field-mission-icons {
+  position: absolute;
+  right: 0;
+  left: 0;
+}
+/* line 421, ../sass/modules/modules.scss */
+#block-views-open-charity-mission-block .view-open-charity-mission .view-content .views-field-field-types ul li .entity-field-collection-item .field-name-field-mission-icons img {
+  display: block;
+  margin: auto;
+  height: auto;
+  position: absolute;
+  top: -48px;
+  right: 0;
+  left: 0;
+}
+/* line 432, ../sass/modules/modules.scss */
+#block-views-open-charity-mission-block .view-open-charity-mission .view-content .views-field-field-types ul li .entity-field-collection-item .field-name-field-mission-header {
+  font-family: "museo_sans500", serif;
+  font-size: 17px;
+  text-align: center;
+  color: #61c0bd;
+  display: block;
+  margin-bottom: 20px;
+  padding-top: 55px;
+  text-transform: capitalize;
+}
+/* line 442, ../sass/modules/modules.scss */
+#block-views-open-charity-mission-block .view-open-charity-mission .view-content .views-field-field-types ul li .entity-field-collection-item .field-name-field-info {
+  text-align: center;
+  display: block;
+  font-family: "open_sansregular", serif;
+  font-size: 14px;
+  color: #575656;
+}
+/* line 453, ../sass/modules/modules.scss */
+#block-views-open-charity-mission-block .view-open-charity-mission .view-content .views-field-field-types ul li:first-child {
+  margin: 0;
+}
+@media only screen and (max-width: 750px) {
+  /* line 453, ../sass/modules/modules.scss */
+  #block-views-open-charity-mission-block .view-open-charity-mission .view-content .views-field-field-types ul li:first-child {
+    margin-bottom: 70px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  /* line 459, ../sass/modules/modules.scss */
+  #block-views-open-charity-mission-block .view-open-charity-mission .view-content .views-field-field-types ul li:last-child {
+    margin: 0;
+  }
+}
+
+/* MEMBERS BLOCK STYLES */
+/* line 477, ../sass/modules/modules.scss */
+#block-views-services-block-1 {
+  background: #f1f2f5;
+  overflow: auto;
+  margin: 0 auto;
+  display: block;
+  padding: 0 80px 30px;
+}
+@media only screen and (max-width: 1024px) {
+  /* line 477, ../sass/modules/modules.scss */
+  #block-views-services-block-1 {
+    padding: 0 50px 30px;
+  }
+}
+@media only screen and (max-width: 880px) {
+  /* line 477, ../sass/modules/modules.scss */
+  #block-views-services-block-1 {
+    padding: 0 30px 20px;
+  }
+}
+/* line 499, ../sass/modules/modules.scss */
+#block-views-services-block-1 .view-services .jcarousel-container div.jcarousel-clip {
+  width: 100%!important;
+}
+@media only screen and (max-width: 750px) {
+  /* line 499, ../sass/modules/modules.scss */
+  #block-views-services-block-1 .view-services .jcarousel-container div.jcarousel-clip {
+    width: 80%!important;
+    margin: 0 auto;
+  }
+}
+/* line 507, ../sass/modules/modules.scss */
+#block-views-services-block-1 .view-services .jcarousel-container div.jcarousel-clip ul.jcarousel li.jcarousel-item {
+  margin: 0 auto;
+  border: none;
+  background: none;
+  display: block;
+  height: auto;
+}
+@media only screen and (max-width: 960px) {
+  /* line 507, ../sass/modules/modules.scss */
+  #block-views-services-block-1 .view-services .jcarousel-container div.jcarousel-clip ul.jcarousel li.jcarousel-item {
+    width: 210px!important;
+  }
+}
+@media only screen and (max-width: 880px) {
+  /* line 507, ../sass/modules/modules.scss */
+  #block-views-services-block-1 .view-services .jcarousel-container div.jcarousel-clip ul.jcarousel li.jcarousel-item {
+    width: 261px!important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* line 507, ../sass/modules/modules.scss */
+  #block-views-services-block-1 .view-services .jcarousel-container div.jcarousel-clip ul.jcarousel li.jcarousel-item {
+    width: 230px!important;
+  }
+}
+@media only screen and (max-width: 750px) {
+  /* line 507, ../sass/modules/modules.scss */
+  #block-views-services-block-1 .view-services .jcarousel-container div.jcarousel-clip ul.jcarousel li.jcarousel-item {
+    width: 535px!important;
+  }
+}
+@media only screen and (max-width: 650px) {
+  /* line 507, ../sass/modules/modules.scss */
+  #block-views-services-block-1 .view-services .jcarousel-container div.jcarousel-clip ul.jcarousel li.jcarousel-item {
+    width: 485px!important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* line 507, ../sass/modules/modules.scss */
+  #block-views-services-block-1 .view-services .jcarousel-container div.jcarousel-clip ul.jcarousel li.jcarousel-item {
+    width: 473px!important;
+  }
+}
+@media only screen and (max-width: 550px) {
+  /* line 507, ../sass/modules/modules.scss */
+  #block-views-services-block-1 .view-services .jcarousel-container div.jcarousel-clip ul.jcarousel li.jcarousel-item {
+    width: 440px!important;
+  }
+}
+@media only screen and (max-width: 500px) {
+  /* line 507, ../sass/modules/modules.scss */
+  #block-views-services-block-1 .view-services .jcarousel-container div.jcarousel-clip ul.jcarousel li.jcarousel-item {
+    width: 423px!important;
+  }
+}
+@media only screen and (max-width: 450px) {
+  /* line 507, ../sass/modules/modules.scss */
+  #block-views-services-block-1 .view-services .jcarousel-container div.jcarousel-clip ul.jcarousel li.jcarousel-item {
+    width: 354px!important;
+  }
+}
+@media only screen and (max-width: 400px) {
+  /* line 507, ../sass/modules/modules.scss */
+  #block-views-services-block-1 .view-services .jcarousel-container div.jcarousel-clip ul.jcarousel li.jcarousel-item {
+    width: 300px!important;
+  }
+}
+/* line 535, ../sass/modules/modules.scss */
+#block-views-services-block-1 .view-services .jcarousel-container div.jcarousel-clip ul.jcarousel li.jcarousel-item .views-field-field-services-image {
+  display: block;
+  height: 100px;
+  position: relative;
+}
+/* line 542, ../sass/modules/modules.scss */
+#block-views-services-block-1 .view-services .jcarousel-container div.jcarousel-clip ul.jcarousel li.jcarousel-item .views-field-field-services-image a img {
+  display: block;
+  height: auto;
+  width: auto;
+  max-height: 80px;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+/* line 566, ../sass/modules/modules.scss */
+#block-views-services-block-1 .view-services .jcarousel-container .jcarousel-prev-horizontal,
+#block-views-services-block-1 .view-services .jcarousel-container .jcarousel-next-horizontal {
+  display: none;
+}
+/* line 569, ../sass/modules/modules.scss */
+#block-views-services-block-1 .view-services .jcarousel-container ul.jcarousel-navigation {
+  text-align: center;
+  display: block;
+  margin-top: 50px;
+}
+@media only screen and (max-width: 880px) {
+  /* line 569, ../sass/modules/modules.scss */
+  #block-views-services-block-1 .view-services .jcarousel-container ul.jcarousel-navigation {
+    margin-top: 30px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  /* line 569, ../sass/modules/modules.scss */
+  #block-views-services-block-1 .view-services .jcarousel-container ul.jcarousel-navigation {
+    margin-top: 15px;
+  }
+}
+/* line 578, ../sass/modules/modules.scss */
+#block-views-services-block-1 .view-services .jcarousel-container ul.jcarousel-navigation li {
+  display: inline-block;
+  margin: 0 5px;
+}
+/* line 584, ../sass/modules/modules.scss */
+#block-views-services-block-1 .view-services .jcarousel-container ul.jcarousel-navigation li a span {
+  background: #979eb1;
+  border-radius: 100%;
+  display: block;
+  text-indent: -999999px;
+  height: 12px;
+  width: 12px;
+}
+/* line 600, ../sass/modules/modules.scss */
+#block-views-services-block-1 .view-services .jcarousel-container ul.jcarousel-navigation li.active a span {
+  background: #61c0bd;
+  display: block;
+  border-radius: 100%;
+}
+
+/* BLOG STYLES */
+/* line 620, ../sass/modules/modules.scss */
+#block-views-front-page-blog-display-block {
+  overflow: auto;
+  margin: 0 auto;
+  display: block;
+  padding: 30px 60px 40px;
+}
+@media only screen and (max-width: 1024px) {
+  /* line 620, ../sass/modules/modules.scss */
+  #block-views-front-page-blog-display-block {
+    padding: 30px 50px;
+  }
+}
+@media only screen and (max-width: 880px) {
+  /* line 620, ../sass/modules/modules.scss */
+  #block-views-front-page-blog-display-block {
+    padding: 20px 30px;
+  }
+}
+/* line 642, ../sass/modules/modules.scss */
+#block-views-front-page-blog-display-block .view-front-page-blog-display .jcarousel-container div.jcarousel-clip {
+  width: 100%!important;
+}
+@media only screen and (max-width: 750px) {
+  /* line 642, ../sass/modules/modules.scss */
+  #block-views-front-page-blog-display-block .view-front-page-blog-display .jcarousel-container div.jcarousel-clip {
+    width: 80%!important;
+    margin: 0 auto;
+  }
+}
+/* line 650, ../sass/modules/modules.scss */
+#block-views-front-page-blog-display-block .view-front-page-blog-display .jcarousel-container div.jcarousel-clip ul.jcarousel li.jcarousel-item {
+  margin: 0 auto;
+  border: none;
+  background: none;
+  display: block;
+  height: auto;
+}
+@media only screen and (max-width: 960px) {
+  /* line 650, ../sass/modules/modules.scss */
+  #block-views-front-page-blog-display-block .view-front-page-blog-display .jcarousel-container div.jcarousel-clip ul.jcarousel li.jcarousel-item {
+    width: 270px!important;
+  }
+}
+@media only screen and (max-width: 880px) {
+  /* line 650, ../sass/modules/modules.scss */
+  #block-views-front-page-blog-display-block .view-front-page-blog-display .jcarousel-container div.jcarousel-clip ul.jcarousel li.jcarousel-item {
+    width: 267px!important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* line 650, ../sass/modules/modules.scss */
+  #block-views-front-page-blog-display-block .view-front-page-blog-display .jcarousel-container div.jcarousel-clip ul.jcarousel li.jcarousel-item {
+    width: 231px!important;
+  }
+}
+@media only screen and (max-width: 750px) {
+  /* line 650, ../sass/modules/modules.scss */
+  #block-views-front-page-blog-display-block .view-front-page-blog-display .jcarousel-container div.jcarousel-clip ul.jcarousel li.jcarousel-item {
+    width: 535px!important;
+  }
+}
+@media only screen and (max-width: 700px) {
+  /* line 650, ../sass/modules/modules.scss */
+  #block-views-front-page-blog-display-block .view-front-page-blog-display .jcarousel-container div.jcarousel-clip ul.jcarousel li.jcarousel-item {
+    width: 485px!important;
+  }
+}
+@media only screen and (max-width: 650px) {
+  /* line 650, ../sass/modules/modules.scss */
+  #block-views-front-page-blog-display-block .view-front-page-blog-display .jcarousel-container div.jcarousel-clip ul.jcarousel li.jcarousel-item {
+    width: 443px!important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* line 650, ../sass/modules/modules.scss */
+  #block-views-front-page-blog-display-block .view-front-page-blog-display .jcarousel-container div.jcarousel-clip ul.jcarousel li.jcarousel-item {
+    width: 403px!important;
+  }
+}
+@media only screen and (max-width: 550px) {
+  /* line 650, ../sass/modules/modules.scss */
+  #block-views-front-page-blog-display-block .view-front-page-blog-display .jcarousel-container div.jcarousel-clip ul.jcarousel li.jcarousel-item {
+    width: 365px!important;
+  }
+}
+@media only screen and (max-width: 500px) {
+  /* line 650, ../sass/modules/modules.scss */
+  #block-views-front-page-blog-display-block .view-front-page-blog-display .jcarousel-container div.jcarousel-clip ul.jcarousel li.jcarousel-item {
+    width: 340px!important;
+  }
+}
+@media only screen and (max-width: 450px) {
+  /* line 650, ../sass/modules/modules.scss */
+  #block-views-front-page-blog-display-block .view-front-page-blog-display .jcarousel-container div.jcarousel-clip ul.jcarousel li.jcarousel-item {
+    width: 305px!important;
+  }
+}
+/* line 678, ../sass/modules/modules.scss */
+#block-views-front-page-blog-display-block .view-front-page-blog-display .jcarousel-container div.jcarousel-clip ul.jcarousel li.jcarousel-item span.blog_wrapper {
+  display: block;
+  padding: 0 15px;
+}
+/* line 684, ../sass/modules/modules.scss */
+#block-views-front-page-blog-display-block .view-front-page-blog-display .jcarousel-container div.jcarousel-clip ul.jcarousel li.jcarousel-item span.blog_wrapper .views-field-title a {
+  font-family: "open_sansregular", serif;
+  color: #61c0bd;
+  display: block;
+  font-size: 14px;
+  text-align: left;
+  margin-bottom: 30px;
+}
+@media only screen and (max-width: 750px) {
+  /* line 684, ../sass/modules/modules.scss */
+  #block-views-front-page-blog-display-block .view-front-page-blog-display .jcarousel-container div.jcarousel-clip ul.jcarousel li.jcarousel-item span.blog_wrapper .views-field-title a {
+    margin-bottom: 15px;
+  }
+}
+/* line 697, ../sass/modules/modules.scss */
+#block-views-front-page-blog-display-block .view-front-page-blog-display .jcarousel-container div.jcarousel-clip ul.jcarousel li.jcarousel-item span.blog_wrapper .views-field-body {
+  display: block;
+  font-size: 14px;
+  color: #5b6172;
+  font-family: "open_sansregular", serif;
+  text-align: left;
+  margin-bottom: 50px;
+  line-height: 1.5;
+}
+/* line 708, ../sass/modules/modules.scss */
+#block-views-front-page-blog-display-block .view-front-page-blog-display .jcarousel-container div.jcarousel-clip ul.jcarousel li.jcarousel-item span.blog_wrapper .views-field-created {
+  display: block;
+  font-size: 14px;
+  font-family: "open_sansregular", serif;
+  color: #5b6172;
+  text-align: left;
+}
+/* line 725, ../sass/modules/modules.scss */
+#block-views-front-page-blog-display-block .view-front-page-blog-display .jcarousel-container .jcarousel-prev-horizontal {
+  background: url(../images/arrows.png) no-repeat;
+  background-position: center bottom;
+  top: 40%;
+  width: 19px;
+  height: 28px;
+  left: -30px;
+}
+@media only screen and (max-width: 750px) {
+  /* line 725, ../sass/modules/modules.scss */
+  #block-views-front-page-blog-display-block .view-front-page-blog-display .jcarousel-container .jcarousel-prev-horizontal {
+    left: 0;
+  }
+}
+/* line 736, ../sass/modules/modules.scss */
+#block-views-front-page-blog-display-block .view-front-page-blog-display .jcarousel-container .jcarousel-next-horizontal {
+  background: url(../images/arrows.png) no-repeat;
+  background-position: center top;
+  top: 40%;
+  width: 19px;
+  height: 28px;
+  right: -30px;
+}
+@media only screen and (max-width: 750px) {
+  /* line 736, ../sass/modules/modules.scss */
+  #block-views-front-page-blog-display-block .view-front-page-blog-display .jcarousel-container .jcarousel-next-horizontal {
+    right: 0;
+  }
+}

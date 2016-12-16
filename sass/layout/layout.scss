@@ -1,0 +1,252 @@
+
+/* LAYOUT CSS STYLESHEETS  */
+
+
+/* IMPORTS*/
+
+@import 'utilities/variables/variables';
+
+	
+	/* HEADER STYLES */
+	
+	#header {
+		@extend .layout;
+		position:relative;
+		padding:20px 80px;
+		@include breakpoint1024 {
+			padding:20px 50px;}
+		
+		div.section {
+
+			
+			h1#logo {
+				float: left;
+				display: block;
+				position: relative;
+				top: 8px;
+				@include breakpoint750 {
+					float:none;
+					top:0;}
+				
+				a {
+					
+					img {
+						max-width:155px;
+						width:auto;
+						display:block;
+						height:auto;
+						@include breakpoint750 {
+							margin:0 auto;}
+					}
+					
+				}
+				
+			}
+			
+			div.region {
+				float:right;
+				display:block;
+				@include breakpoint750 {
+					float:none;}
+					
+					div.block {
+						float:right;
+						display:block;
+					    margin-left: 15px;}
+						
+					#block-system-main-menu {
+						margin: 0px auto;
+						position: relative;
+						display: table;
+						height: 50px;
+						@include breakpoint750 {
+							float:none;}
+						
+						
+						div.content {
+							display: table-cell;
+							list-style: none;
+							vertical-align: middle;}
+						
+						h2 {
+							display:none;}
+							
+						ul.menu {
+														
+							li {
+								list-style: none;
+								padding: 0;
+								margin: 0 15px;
+								float: left;
+								@include breakpoint550 {
+									margin: 0 10px;}
+								
+								a {
+									color:$gray;
+									font-family:$museoMain;
+									text-transform:uppercase;
+									font-size:14px;
+									@include breakpoint750 {
+										font-size:12px;}
+								}
+								
+							}
+							
+						}
+						
+					}
+	
+					#block-block-1 {
+						@include breakpoint750 {
+							position: absolute;
+							right: 15px;
+							top: 15px;
+							margin:0;}
+						@include breakpoint500 {
+							top:5px;
+							right:5px;}
+						
+						div.content {
+							display: table;
+							height: 50px;
+							@include breakpoint750 {
+								height:30px;}
+													
+							a.join {
+								color:$blue;
+								display:table-cell;
+								vertical-align:middle;
+								height:100%;
+								padding: 15px 25px;
+								font-size:14px;
+								font-family:$museoMain;
+								text-transform:uppercase;
+								border:1px solid $blue;
+								@include breakpoint960 {
+									padding:10px 15px;}
+								@include breakpoint750 {
+									font-size:12px;
+									padding:5px 10px;}
+								@include breakpoint650 {
+									font-size:10px;}
+							}
+						}
+							
+					}
+						
+			
+			}
+		
+		}
+				
+	}
+	
+	/* HIGHLIGHTED LAYOUT STYLES */
+	
+	#highlighted {
+		
+		.region-highlighted {}
+		
+	}
+	
+	/* MAIN CONTENT STYLES */
+	
+	.region-content {
+		position:relative;
+		
+		.block {}
+			
+		#block-views-about-block-block {}
+		
+		#block-views-open-charity-mission-block {}
+		
+		#block-system-main {}
+		
+		#block-views-services-block-1 {}
+		
+		#block-views-front-page-blog-display-block {}
+		
+	}
+	
+	/* FOOTER LAYOUT STYLES */
+	
+	#footer {
+		display:block;
+		background:$dkGray;
+		
+		.region-footer {
+			padding:30px 80px;
+			@extend .layout;
+			@include breakpoint1024 {
+				padding:20px 50px;}
+			@include breakpoint768 {
+				padding:15px 30px;}
+			
+			.block {
+				border-bottom: 1px solid #565a63;}
+			.block:last-child {
+				border:none;}
+			
+			#block-block-2 {
+				
+				p.copyright {
+					font-family:$sans;
+					color:#979eb1;
+					text-align:center;
+					font-size:14px;
+					
+					a {
+						color:$blue;}
+					
+				}
+				
+			}
+			
+			#block-block-3 {
+				display:block;
+				padding-bottom:30px;
+				margin-bottom:20px;
+				@include breakpoint768 {
+					margin-bottom:15px;
+					padding-bottom:20px;}
+				
+				ul.social_list {
+					text-align:center;
+					display:block;
+					
+					li {
+						display:inline-block;
+						
+						p {
+							
+							a {
+								background:url(../images/icons.png) no-repeat;
+								text-indent:-99999px;
+								display:block;
+								height:20px;
+								width: 26px;
+								margin: 0 5px;}
+							
+							a.facebook {
+								background-position: top center;}
+							a.twitter {
+								background-position: center 52%;
+								height:18px;}
+							a.google {
+								background-position: bottom center;
+								height: 17px;}
+							
+						}
+						
+					}
+					
+				}
+				
+			}
+		
+		}
+		
+	}
+	
+	
+	

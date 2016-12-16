@@ -1,0 +1,111 @@
+
+/* CSS VARIBLES STYLESHEET  */
+
+@import 'utilities/breakpoint/breakpoint';
+
+/* COLOR VARIABLES  */
+
+$gray: #575656;
+$ltGray: #f2f2f2;
+$dkGray: #454850;
+
+$blue: #61c0bd;
+$purpBlue: #5b6172;
+
+$ltWhite:#f1f2f5;
+
+$white: #ffffff;
+$black: #000000;
+
+
+
+/* FONT IMPORTS */
+
+@font-face {
+    font-family: 'museo_sans500';
+    src: url('../fonts/museosans-500.woff2') format('woff2'),
+         url('../fonts/museosans-500.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'museosansw01-rounded300Rg';
+    src: url('../fonts/museo_sans_rounded_300.woff2') format('woff2'),
+         url('../fonts/museo_sans_rounded_300.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'open_sansregular';
+	src: url("../fonts/opensans-regular-webfont.woff2") format("woff2"),
+	     url("../fonts/opensans-regular-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* FONT VARIABLES  */
+
+$museoMain: 'museo_sans500', serif;
+
+$museoRound: 'museosansw01-rounded300Rg', serif;
+
+$sans: 'open_sansregular', serif;
+
+
+/* EXTEND */
+
+.layout {
+	display:block;
+	width:auto;
+	margin:0 auto;
+	max-width:1200px;}
+
+.clear {
+	width:100%;
+	height:auto;
+	margin:0;
+	padding:0;}
+	
+.head2 {
+	font-family:$museoMain;
+	text-align:center;
+	font-size:26px;
+	text-transform:uppercase;
+	margin:0 auto 40px;
+	display:block;
+	color:$gray;
+	@include breakpoint1024 {
+		margin-bottom:30px;}
+	@include breakpoint960 {
+		font-size:22px;
+		margin-bottom:20px;}
+	@include breakpoint750 {
+		font-size:20px;
+		margin-bottom:10px;}
+	@include breakpoint550 {
+		font-size:18px;}
+}
+
+
+/* MIXINS */
+	
+@mixin borderRadius ($border){
+	
+	border-radius: $border $border $border $border;
+	-webkit-border-radius: $border $border $border $border;
+	-khtml-border-radius: $border $border $border $border; 
+	-moz-border-radius: $border $border $border $border;
+
+}
+
+@mixin boxshadow ($shadow1,$shadow2,$shadow3,$colorME){
+	
+  -webkit-box-shadow: $shadow1 $shadow2 $shadow3 $colorME;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    $shadow1 $shadow2 $shadow3 $colorME;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         $shadow1 $shadow2 $shadow3 $colorME;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+  
+}

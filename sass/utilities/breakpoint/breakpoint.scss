@@ -1,0 +1,120 @@
+
+// MEDIA QUERIE MIXINS
+
+
+@mixin breakpoint400 {
+	
+	@media only screen and (max-width:400px) {
+		@content;
+		}
+	
+}
+
+@mixin breakpoint450 {
+	
+	@media only screen and (max-width:450px) {
+		@content;
+		}
+	
+}
+
+@mixin breakpoint500 {
+	
+	@media only screen and (max-width:500px) {
+		@content;
+		}
+	
+}
+
+
+@mixin breakpoint550 {
+	
+	@media only screen and (max-width:550px) {
+		@content;
+		}
+	
+}
+
+@mixin breakpoint600 {
+	
+	@media only screen and (max-width:600px) {
+		@content;
+		}
+	
+}
+
+@mixin breakpoint650 {
+	
+	@media only screen and (max-width:650px) {
+		@content;
+		}
+	
+}
+
+@mixin breakpoint700 {
+	
+	@media only screen and (max-width:700px) {
+		@content;
+		}
+	
+}
+
+@mixin breakpoint750 {
+	
+	@media only screen and (max-width:750px) {
+		@content;
+		}
+	
+}
+
+@mixin breakpoint768 {
+	
+	@media only screen and (max-width:768px) {
+		@content;
+		}
+	
+}
+
+@mixin breakpoint880 {
+	@media only screen and (max-width:880px) {
+		@content;
+		}	
+}
+
+@mixin breakpoint960 {
+	@media only screen and (max-width:960px) {
+		@content;
+		}	
+}
+
+@mixin breakpoint1024 {
+	
+	@media only screen and (max-width:1024px) {
+		@content;
+		}
+	
+}
+
+@mixin breakpoint1000 {
+	
+	@media only screen and (max-width:1000px) {
+		@content;
+		}
+	
+}
+
+@mixin breakpoint1150 {
+	
+	@media only screen and (max-width:1150px) {
+		@content;
+		}
+	
+}
+
+@mixin breakpoint1250 {
+	
+	@media only screen and (max-width:1250px) {
+		@content;
+		}
+	
+}

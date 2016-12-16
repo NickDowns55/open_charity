@@ -1,0 +1,11 @@
+name = Open Charity
+description = A Custom theme for Open Charity.
+version = VERSION
+core = 7.x
+
+stylesheets[all][] = css/index.css
+
+; Information added by Drupal.org packaging script on 2016-12-15
+version = "7.53"
+project = "drupal"
+datestamp = "1456343506"

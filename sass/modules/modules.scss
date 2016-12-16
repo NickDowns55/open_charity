@@ -1,0 +1,751 @@
+
+/* MODULE CSS STYLESHEETS  */
+
+
+/* IMPORTS */
+
+@import 'utilities/variables/variables';
+
+
+	/* FRONT BANNER STYLES */
+	
+	#block-views-front-page-banner-block {
+		
+		div.view-front-page-banner {
+			
+			.banner-wrap {
+				position:relative;
+				
+				.parallax-window {
+					
+					.views-field-field-banner-image {
+						display:none;}
+				
+					.views-field-nothing {
+						display: block;
+						padding: 80px 0;
+						width: 60%;
+						margin: 0 auto;
+						@include breakpoint1024 {
+							padding:50px 0;}
+						@include breakpoint960 {
+							width:70%;}
+						
+						span.field-content {
+						
+							h2.head {
+								font-size:54px;
+								text-align:center;
+								color:$white;
+								display:block;
+								margin-bottom:40px;
+								text-transform:uppercase;
+								font-family:$museoRound;
+								@include breakpoint1250 {
+									font-size:45px;
+									margin-bottom:30px;}
+								@include breakpoint960 {
+									font-size:35px;}
+								@include breakpoint750 {
+									font-size:28px;
+									margin-bottom:15px;}
+								@include breakpoint550 {
+									font-size:20px;}
+							}
+							
+							div.subhead {
+								
+								ul {
+									
+									li {
+										display:block;
+										margin: 0 0 35px;
+										@include breakpoint960 {
+											margin:0 0 25px;}
+										@include breakpoint750 {
+											margin:0 0 15px;}
+										
+										p {
+											font-size:16px;
+											color:$white;
+											text-align:center;
+											line-height:1.2;
+											font-family:$sans;
+											@include breakpoint880 {
+												font-size:14px;}
+											@include breakpoint650 {
+												font-size:12px;}
+										}
+										
+									}
+								}
+							}
+							
+						}
+						
+					}
+					
+				}
+					
+			}
+			
+		}
+		
+	}
+	
+	/* CURRENT EVENT STYLES */
+	
+	#block-views-current-event-block {
+		background-color:$ltGray;
+		display:block;
+		width:100%;
+		
+		div.content {
+			@extend .layout;}
+					
+		div.view-current-event {
+			
+			.view-content {
+				display: block;
+				overflow: auto;
+				padding:35px 70px;
+				@include breakpoint1024 {
+					padding:30px 50px;}
+				@include breakpoint880 {
+					padding:20px 30px;}
+				
+				.views-field-view-node {
+					display:block;
+					float:right;
+					@include breakpoint750 {
+						float:none;
+						margin-bottom:15px;}
+					
+					span.field-content {
+						@include breakpoint750 {
+							display:block;
+							text-align:center;}
+					
+						a {
+							font-family:$museoMain;
+							text-transform:uppercase;
+							color:$white;
+							font-size:14px;
+							text-align:center;
+							background:$blue;
+							padding:15px 20px;
+							position: relative;
+							top: 18px;
+							@include breakpoint750 {
+								padding:10px 15px;
+								display:inline-block;
+								top:0;}
+						}
+						
+					}
+					
+				}
+				
+				.views-field-field-event-date {
+					display:block;
+					float:left;
+					font-size:17px;
+					font-family:$museoMain;
+					margin-bottom:15px;
+					@include breakpoint750 {
+						font-size:15px;
+						float:none;
+						text-align:center;}
+					
+					span.views-label {
+						color:$blue;}
+						
+					.field-content {
+						display:inline;
+						color:$gray;
+						
+						.date-display-single {
+							display:inline;
+
+							sub, sup {
+							  font-size: 75%;
+							  line-height: 0;
+							  position: relative;
+							  vertical-align: baseline;
+							}
+							
+							sup {
+							  top: -0.5em;
+							}
+							
+							.date-display-range {
+								display:inline;}
+							
+						}
+						
+					}
+					
+					
+				
+				}
+				
+				.views-field-field-event-address {
+					display:block;
+					float:left;
+					clear:left;
+					@include breakpoint750 {
+						float:none;
+						clear:both;
+						text-align:center;}
+					
+					.field-content {
+						
+						address {
+							font-size:14px;
+							color:$purpBlue;
+							font-family:$museoMain;}
+						
+					}
+				
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+	/* WHAT WE DO BLOCK (GET INVOLVED) STYLES */
+	
+	#block-views-about-block-block {
+		padding:40px 80px;
+		overflow:auto;
+		@extend .layout;
+		@include breakpoint1024 {
+			padding:30px 50px;}
+		@include breakpoint880 {
+			padding:20px 30px;}
+		
+		div.content {}
+		
+		> h2 {
+			@extend .head2;}
+		
+		.view-about-block {
+			
+			.views-row {
+				float:left;
+				width:33.3333%;
+				display:block;
+				@include breakpoint750 {
+					width:100%;
+					float:none;
+					margin:0 auto 40px;}
+				@include breakpoint650 {
+					margin:0 auto 30px;}
+				
+				span.about_wrap {
+					display:block;
+					padding:0 50px;
+					@include breakpoint960 {
+						padding:0 30px;}
+					@include breakpoint768 {
+						padding:0 15px;}
+				
+					.views-field-field-icon {
+						
+						img {
+							height:auto;
+							width:auto;
+							display:block;
+							margin:0 auto;}
+						
+					}
+					
+					.views-field-title {
+						
+						a {
+							font-family:$museoMain;
+							text-transform:uppercase;
+							color:$gray;
+							font-size:17px;
+							text-align:center;
+							display:block;
+							margin:30px 0;
+							@include breakpoint768 {
+								margin:15px 0;}
+						}
+						
+					}
+					
+					.views-field-body {
+						font-family:$museoMain;
+						color:$purpBlue;
+						font-size:14px;
+						text-align:center;
+						line-height:1.5;			
+					}
+					
+					.views-field-field-group-type {
+						
+						.field-content {
+							text-align:center;
+						
+							a {
+								border:1px solid $blue;
+								color:$blue;
+								padding:15px 50px;
+								font-size:14px;
+								text-transform:uppercase;
+								font-family:$museoMain;
+								display:inline-block;
+								margin:30px auto 0;
+								@include breakpoint1024 {
+									padding:15px 30px;}
+								@include breakpoint768 {
+									padding:10px 20px;
+									margin-top:20px;}
+							}
+								
+						}
+						
+					}
+				
+				}
+				
+			}
+
+			.views-row-last:last-child {
+				@include breakpoint750 {
+					margin:0;}
+			}
+			
+			.views-row-first span.about_wrap {
+				padding-left:0;}
+			.views-row-last span.about_wrap {
+				padding-right:0;}
+			
+		}
+		
+	}
+	
+	
+	/* OPEN CHARITY MISSION STYLES */
+	
+	#block-views-open-charity-mission-block {
+		background:$ltWhite;
+		overflow:auto;
+		margin:0 auto;
+		display:block;
+		padding:40px 80px 50px;
+		@include breakpoint1024 {
+			padding:30px 50px;}
+		@include breakpoint880 {
+			padding:20px 30px;}
+		
+		div.content {
+			@extend .layout;}
+
+		> h2 {
+			@extend .head2;}		
+		
+		.view-open-charity-mission {
+			border-bottom:1px solid #eeeff2;
+			@include boxshadow(0,1px,0,#dcdde0);
+			overflow:auto;
+			display:block;
+			padding-bottom:50px;
+			@include breakpoint880 {
+				padding-bottom:30px;}
+			
+			.view-content {
+				
+				.views-field-field-mission-slogan {
+					
+					h5 {
+						text-align:center;
+						font-family:$sans;
+						font-size:14px;
+						color:$purpBlue;
+						
+						strong {
+							font-family:$museoMain;
+							font-size:17px;
+							display:block;
+							margin:30px auto 0;
+							@include breakpoint880 {
+								font-size:15px;
+								margin:15px auto 0;}
+						}
+						
+					}
+					
+				}
+				
+				.views-field-field-types {
+					
+					ul {
+						display: block;
+						margin: 96px 0 0;
+						padding: 0;
+						@include breakpoint768 {
+							margin-top:80px;}
+											
+						li {
+							display:block;
+							float:left;
+							width: 31.66%;
+							list-style:none;
+							padding:0;
+							margin: 0 0 0 2.5%;
+							@include breakpoint750 {
+								width:100%;
+								float:none;
+								margin:0 auto 70px;}
+							
+							.entity-field-collection-item {
+								background:$white;
+								padding:0 20px 40px;
+								display:block;
+								position:relative;
+								@include breakpoint960 {
+									padding:0 10px 20px;}
+								
+								@include borderRadius (6px);
+							
+								.field-name-field-mission-icons {
+									position: absolute;
+									right: 0;
+									left: 0;
+									
+									img {
+										display: block;
+										margin: auto;
+										height: auto;
+										position: absolute;
+										top: -48px;
+										right: 0;
+										left: 0;}
+									
+								}
+								
+								.field-name-field-mission-header {
+									font-family:$museoMain;
+									font-size:17px;
+									text-align:center;
+									color:$blue;
+									display:block;
+									margin-bottom:20px;
+									padding-top:55px;
+									text-transform:capitalize;}
+								
+								.field-name-field-info {
+									text-align:center;
+									display:block;
+									font-family:$sans;
+									font-size:14px;
+									color:$gray;}
+									
+							}
+							
+						}
+						
+						li:first-child {
+							margin:0;
+							@include breakpoint750 {
+								margin-bottom:70px;}
+						}
+						
+						li:last-child {
+							@include breakpoint750 {
+								margin:0;}
+						}
+						
+					}
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+
+	/* MEMBERS BLOCK STYLES */
+	
+	#block-views-services-block-1 {
+		background: #f1f2f5;
+		overflow: auto;
+		margin: 0 auto;
+		display: block;
+		padding: 0 80px 30px;
+		@include breakpoint1024 {
+			padding: 0 50px 30px;}
+		@include breakpoint880 {
+			padding:0 30px 20px;}
+
+		> h2 {
+			@extend .head2;}	
+
+		div.content {
+			@extend .layout;}
+			
+		.view-services {
+			
+			.jcarousel-container {
+				@extend .clear;
+
+				div.jcarousel-clip {
+					width:100%!important;
+					@include breakpoint750 {
+						width:80%!important;
+						margin:0 auto;}
+											
+					ul.jcarousel {
+						
+						li.jcarousel-item {
+							margin: 0 auto;
+							border: none;
+							background: none;
+							display: block;
+							height: auto;
+							@include breakpoint960 {
+								width:210px!important;}
+							@include breakpoint880 {
+								width:261px!important;}
+							@include breakpoint768 {
+								width: 230px!important;}
+							@include breakpoint750 {
+								width: 535px!important;}
+							@include breakpoint650 {
+								width:485px!important;}
+							@include breakpoint600 {
+								width:473px!important;}
+							@include breakpoint550 {
+								width: 440px!important;}
+							@include breakpoint500 {
+								width: 423px!important;}
+							@include breakpoint450 {
+								width: 354px!important;}
+							@include breakpoint400 {
+								width: 300px!important;}								
+								
+								
+							.views-field-field-services-image {
+								display:block;
+								height:100px;
+								position:relative;
+								
+								a {
+									
+									img {
+										display: block;
+										height: auto;
+										width: auto;
+										max-height: 80px;
+										margin: auto;
+										position: absolute;
+										right: 0;
+										left: 0;
+										top: 0;
+										bottom: 0;
+									}
+									
+								}
+								
+							}
+															
+						}
+					
+					}
+
+				}
+				
+				.jcarousel-prev-horizontal,
+				.jcarousel-next-horizontal {
+					display:none;}
+				
+				ul.jcarousel-navigation {
+					text-align:center;
+					display:block;
+					margin-top: 50px;
+					@include breakpoint880 {
+						margin-top:30px;}
+					@include breakpoint750 {
+						margin-top:15px;}
+					
+					li {
+						display:inline-block;
+						margin:0 5px;
+						
+						a {
+							
+							span {
+								background:#979eb1;
+								border-radius:100%;
+								display:block;
+								text-indent:-999999px;
+								height:12px;
+								width:12px;}
+							
+						}
+						
+					}
+					
+					li.active {
+						
+						a {
+							
+							span {
+								background:$blue;
+								display:block;
+								border-radius:100%;}
+						
+						}
+						
+					}
+				
+				}
+				
+			}
+			
+		}
+		
+	}
+
+	
+	/* BLOG STYLES */
+	
+	#block-views-front-page-blog-display-block {
+		overflow:auto;
+		margin:0 auto;
+		display:block;
+		padding:30px 60px 40px;
+		@include breakpoint1024 {
+			padding:30px 50px;}
+		@include breakpoint880 {
+			padding:20px 30px;}
+
+		> h2 {
+			@extend .head2;
+		}
+	
+		div.content {
+			@extend .layout;}	
+			
+		.view-front-page-blog-display {
+			
+			.jcarousel-container {
+				@extend .clear;
+				
+				div.jcarousel-clip {
+					width:100%!important;
+					@include breakpoint750 {
+						width: 80%!important;
+						margin:0 auto;}
+											
+					ul.jcarousel {
+						
+						li.jcarousel-item {
+							margin: 0 auto;
+							border: none;
+							background: none;
+							display: block;
+							height: auto;
+							@include breakpoint960 {
+								width:270px!important;}
+							@include breakpoint880 {
+								width:267px!important;}
+							@include breakpoint768 {
+								width: 231px!important;}
+							@include breakpoint750 {
+								width: 535px!important;}
+							@include breakpoint700 {
+								width: 485px!important;}
+							@include breakpoint650 {
+								width: 443px!important;}
+							@include breakpoint600 {
+								width: 403px!important;}
+							@include breakpoint550 {
+								width: 365px!important;}
+							@include breakpoint500 {
+								width: 340px!important;}
+							@include breakpoint450 {
+								width: 305px!important;}
+							
+							
+							span.blog_wrapper {
+								display:block;
+								padding:0 15px;
+								
+								.views-field-title {
+									
+									a {
+										font-family:$sans;
+										color:$blue;
+										display:block;
+										font-size:14px;
+										text-align:left;
+										margin-bottom:30px;
+										@include breakpoint750 {
+											margin-bottom:15px;}
+									}
+									
+								}
+								
+								.views-field-body {
+									display:block;
+									font-size:14px;
+									color:$purpBlue;
+									font-family:$sans;
+									text-align:left;
+									margin-bottom:50px;
+									line-height:1.5;
+									@include breakpoint750 {}
+								}
+								
+								.views-field-created {
+									display:block;
+									font-size:14px;
+									font-family:$sans;
+									color:$purpBlue;
+									text-align:left;
+									@include breakpoint750 {}
+								}
+								
+							}
+							
+						}
+					
+					}
+
+				}
+				
+				.jcarousel-prev-horizontal {
+					background:url(../images/arrows.png) no-repeat;
+					background-position:center bottom;
+					top: 40%;
+					width:19px;
+					height:28px;
+					left: -30px;
+					@include breakpoint750 {
+						left:0;}
+				}
+				
+				.jcarousel-next-horizontal {
+					background:url(../images/arrows.png) no-repeat;
+					background-position:center top;
+					top: 40%;
+					width:19px;
+					height:28px;
+					right: -30px;
+					@include breakpoint750 {
+						right:0;}
+				}
+				
+			}
+			
+		}
+		
+	}
