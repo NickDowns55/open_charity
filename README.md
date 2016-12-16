@@ -7,4 +7,4 @@ With my initial instructions of this site and the design comp i have received, m
 
 Everything has been tested after completion for accuracy in browsers and mobile devices. All images are high resolution but yet optimized for web. Page load size comes in at 331.2kb and only 33 requests since I turned ajax on with the sliders.
 
-I also turned the banner background image in to a parallax display with a quick theme (views-view-fields--front-page-banner--block.tpl) changed and a parallax script in libraries.
+I also turned the banner background image in to a parallax display with a quick theme (views-view-fields--front-page-banner--block.tpl) change and a parallax script in libraries.
